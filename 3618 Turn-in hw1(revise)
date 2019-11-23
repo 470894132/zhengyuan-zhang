@@ -1,0 +1,8 @@
+x <- c(1, 2, 3, 4, 5, 6)
+y <- c(7, 8, 9, 10, 11, 12)
+c(x,y)
+rownames = c("zombie", "vampire")
+colnames = c("chocolate", "caramels", "gummies", "hard candies" , "licorice", "lollopops")
+dimnames = list(rownames, colnames)
+Matrix <- matrix(c(x,y), nrow = 2, byrow = TRUE, dimnames = dimnames)
+print(Matrix)
